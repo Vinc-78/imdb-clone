@@ -8,6 +8,6 @@ class Movie extends Model
 {
     function categories() {
 
-        return $this->hasMany('App\Category');
+        return $this->belongsToMany('App\Category');
     }
 }
