@@ -1,0 +1,16 @@
+.col{
+  margin-bottom:20px;
+  .card{
+    min-height: 500px;
+    background-color: gray;
+    color:white;
+
+    .img-container{
+      object-fit: contain;
+
+      img{
+        height: 300px;
+      }
+    }
+  }
+}
