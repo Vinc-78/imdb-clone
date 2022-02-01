@@ -8,10 +8,10 @@ class Category extends Model
 
 {
 
-    protected $table="categories";
-    
-    function categories() {
+    protected $table = "categories";
 
-        return $this->belongsToMany('App\Movie');
+    function movies()
+    {
+        return $this->belongsToMany('App\Movie', "movie_category")->withTimestamps();
     }
 }

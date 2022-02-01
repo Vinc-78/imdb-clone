@@ -12,14 +12,13 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
-        $categories =['fantasy','horror','animazione','commedia','avventura','azione','biografico'];
+        $categories = ['fantasy', 'horror', 'animazione', 'commedia', 'avventura', 'azione', 'biografico'];
 
-        foreach($categories as $category){
+        foreach ($categories as $category) {
 
             $newcategory = new Category();
-            $newcategory->name =$category;
+            $newcategory->name = $category;
             $newcategory->save();
-
         }
     }
 }

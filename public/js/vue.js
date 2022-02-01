@@ -13845,7 +13845,7 @@ var app = new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\matte\Desktop\classe43BOOLEAN\imdb-clone-1\resources\js\vue.js */"./resources/js/vue.js");
+module.exports = __webpack_require__(/*! C:\Users\Work\Desktop\Boolean\Esercizi\imdb-clone\resources\js\vue.js */"./resources/js/vue.js");
 
 
 /***/ })

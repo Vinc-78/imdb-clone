@@ -6,10 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    protected $table="movies";
+    protected $table = "movies";
 
-    function categories() {
+    function categories()
+    {
 
-        return $this->belongsToMany('App\Category');
+        return $this->belongsToMany('App\Category', "movie_category")->withTimestamps();
     }
 }
