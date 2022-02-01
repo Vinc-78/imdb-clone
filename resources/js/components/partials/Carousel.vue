@@ -129,7 +129,7 @@ export default {
 
   #carousel-little{
     position: relative !important;
-   bottom: -180px;
+     bottom: -180px;
     left: 25px;
 
     img{
