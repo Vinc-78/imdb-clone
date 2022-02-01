@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-8">
         <div
           id="carouselExampleControls"
@@ -45,7 +45,6 @@
         </div>
       </div>
       <div class="col-4">
-            <h2>sidebar</h2>
             <ul class="list-group">
                 <li class="list-group-item d-flex" v-for="(movie) in moviesData" :key="movie.id">
                     <img :src="movie.coverImg" alt="" style="height: 100px; width: 100px; object-fit: cover">
