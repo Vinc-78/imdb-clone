@@ -18,6 +18,9 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 }); */
 
+Route::get('/', 'HomeController@index')->name('guests.home');
+
+
 Auth::routes();
 
 Route::middleware('auth')
@@ -35,10 +38,9 @@ Route::middleware('auth')
 });
 
 
-Route::get("{any?}",function() {   
+/* Route::get("{any?}",function() {   
     return view("guests.home");
-})->where("any", ".*");
+})->where("any", ".*"); */
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');

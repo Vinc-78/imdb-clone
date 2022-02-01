@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="text-white">Lista film</h1>
-    <MoviesContainer></MoviesContainer>
+    <!-- <MoviesContainer></MoviesContainer> -->
   </div>
 </template>
 

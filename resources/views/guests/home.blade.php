@@ -2,10 +2,10 @@
 
 @section('content')
 
-<body>
     
-    <div id="root">
+    <div>
         {{-- Qui andrà Viu --}}
+        <carousel :movies-data="{{ json_encode($movies) }}"></carousel>
     </div>
-</body>
+
 @endsection
