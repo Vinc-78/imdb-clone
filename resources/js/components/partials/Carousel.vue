@@ -7,7 +7,7 @@
           class="carousel slide"
           data-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div id="carousel-front" class="carousel-inner">
             <div
               class="carousel-item"
               :class="i === 0 ? 'active' : ''"
@@ -21,9 +21,57 @@
                 alt="First slide"
                 style="height: 100%; object-fit: cover"
               />
+            
+
+              
             </div>
           </div>
+ 
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
 
+                <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div id="carousel-little" style="width: 300px" class="carousel-inner">
+            <div
+              class="carousel-item"
+              :class="i === 0 ? 'active' : ''"
+              v-for="(movie, i) in moviesData"
+              :key="movie.id"
+              style="height: 300px"
+            >
+              <img
+                class="d-block w-100"
+                :src="movie.coverImg"
+                alt="First slide"
+                style="height: 100%; object-fit: cover"
+              />
+            
+
+              
+            </div>
+          </div>
+ 
           <a
             class="carousel-control-prev"
             href="#carouselExampleControls"
@@ -44,6 +92,7 @@
           </a>
         </div>
       </div>
+        
       <div class="col-4">
             <ul class="list-group">
                 <li class="list-group-item d-flex" v-for="(movie) in moviesData" :key="movie.id">
@@ -65,5 +114,29 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.container{
+
+  .row{
+    position: relative;
+
+
+   #carousel-front{
+     position: absolute;
+   }
+
+  }
+
+  #carousel-little{
+    position: relative !important;
+   bottom: -180px;
+    left: 25px;
+
+    img{
+      width:50px !important;
+      height: 100px !important;
+      border: 2px solid black;
+    }
+  }
+}
 </style>
