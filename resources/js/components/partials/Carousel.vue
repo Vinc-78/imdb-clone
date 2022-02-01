@@ -45,7 +45,13 @@
         </div>
       </div>
       <div class="col-4">
-              <h2>sidebar</h2>
+            <h2>sidebar</h2>
+            <ul class="list-group">
+                <li class="list-group-item d-flex" v-for="(movie) in moviesData" :key="movie.id">
+                    <img :src="movie.coverImg" alt="" style="height: 100px; width: 100px; object-fit: cover">
+                    <p>{{ movie.title }}</p>
+                </li>
+            </ul>
       </div>
     </div>
 

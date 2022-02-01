@@ -149,6 +149,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     moviesData: Array
@@ -681,7 +687,33 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _vm._m(2),
+      _c("div", { staticClass: "col-4" }, [
+        _c("h2", [_vm._v("sidebar")]),
+        _vm._v(" "),
+        _c(
+          "ul",
+          { staticClass: "list-group" },
+          _vm._l(_vm.moviesData, function (movie) {
+            return _c(
+              "li",
+              { key: movie.id, staticClass: "list-group-item d-flex" },
+              [
+                _c("img", {
+                  staticStyle: {
+                    height: "100px",
+                    width: "100px",
+                    "object-fit": "cover",
+                  },
+                  attrs: { src: movie.coverImg, alt: "" },
+                }),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(movie.title))]),
+              ]
+            )
+          }),
+          0
+        ),
+      ]),
     ]),
   ])
 }
@@ -733,12 +765,6 @@ var staticRenderFns = [
         _c("span", { staticClass: "sr-only" }, [_vm._v("Next")]),
       ]
     )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-4" }, [_c("h2", [_vm._v("sidebar")])])
   },
 ]
 render._withStripped = true
