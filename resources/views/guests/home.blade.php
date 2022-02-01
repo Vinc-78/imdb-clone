@@ -3,9 +3,11 @@
 @section('content')
 
     
-    <div>
+    <div class="container">
         {{-- Qui andrà Viu --}}
         <carousel :movies-data="{{ json_encode($movies) }}"></carousel>
+        
     </div>
+    
 
 @endsection

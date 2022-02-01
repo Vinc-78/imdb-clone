@@ -6,10 +6,10 @@
 </template>
 
 <script>
-import MoviesContainer from "./MoviesContainer.vue";
+// import MoviesContainer from "./MoviesContainer.vue";
 export default {
   name: "App",
-  components: { MoviesContainer },
+  // components: { MoviesContainer },
 };
 </script>
 
