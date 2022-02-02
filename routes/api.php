@@ -19,3 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get("/movies", "Api\MoviesController@index");
+Route::get("/movies/{category}", "Api\MoviesController@filter");
+Route::get("/categories", "Api\CategoryController@index");
+Route::get("/categories/{id}", "Api\CategoryController@filter");
