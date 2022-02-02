@@ -21,33 +21,11 @@
                 alt="First slide"
                 style="height: 100%; object-fit: cover"
               />
-            
-
-              
             </div>
           </div>
- 
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleControls"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
 
-                <div
+        <div
           id="carouselExampleControls"
           class="carousel slide"
           data-ride="carousel"
@@ -66,12 +44,9 @@
                 alt="First slide"
                 style="height: 100%; object-fit: cover"
               />
-            
-
-              
             </div>
           </div>
- 
+
           <a
             class="carousel-control-prev"
             href="#carouselExampleControls"
@@ -92,17 +67,24 @@
           </a>
         </div>
       </div>
-        
+
       <div class="col-4">
-            <ul class="list-group">
-                <li class="list-group-item d-flex" v-for="(movie) in moviesData" :key="movie.id">
-                    <img :src="movie.coverImg" alt="" style="height: 100px; width: 100px; object-fit: cover">
-                    <p>{{ movie.title }}</p>
-                </li>
-            </ul>
+        <ul class="list-group">
+          <li
+            class="list-group-item d-flex"
+            v-for="movie in moviesData"
+            :key="movie.id"
+          >
+            <img
+              :src="movie.coverImg"
+              alt=""
+              style="height: 100px; width: 100px; object-fit: cover"
+            />
+            <p>{{ movie.title }}</p>
+          </li>
+        </ul>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -115,25 +97,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-
-  .row{
+.container {
+  .row {
     position: relative;
 
-
-   #carousel-front{
-     position: absolute;
-   }
-
+    #carousel-front {
+      position: absolute;
+    }
   }
 
-  #carousel-little{
+  #carousel-little {
     position: relative !important;
-     bottom: -180px;
+    bottom: -180px;
     left: 25px;
 
-    img{
-      width:50px !important;
+    img {
+      width: 50px !important;
       height: 100px !important;
       border: 2px solid black;
     }

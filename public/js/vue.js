@@ -185,24 +185,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     moviesData: Array
@@ -1375,10 +1357,6 @@ var render = function () {
               }),
               0
             ),
-            _vm._v(" "),
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._m(1),
           ]
         ),
         _vm._v(" "),
@@ -1417,9 +1395,9 @@ var render = function () {
               0
             ),
             _vm._v(" "),
-            _vm._m(2),
+            _vm._m(0),
             _vm._v(" "),
-            _vm._m(3),
+            _vm._m(1),
           ]
         ),
       ]),
@@ -1453,54 +1431,6 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "carousel-control-prev",
-        attrs: {
-          href: "#carouselExampleControls",
-          role: "button",
-          "data-slide": "prev",
-        },
-      },
-      [
-        _c("span", {
-          staticClass: "carousel-control-prev-icon",
-          attrs: { "aria-hidden": "true" },
-        }),
-        _vm._v(" "),
-        _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        staticClass: "carousel-control-next",
-        attrs: {
-          href: "#carouselExampleControls",
-          role: "button",
-          "data-slide": "next",
-        },
-      },
-      [
-        _c("span", {
-          staticClass: "carousel-control-next-icon",
-          attrs: { "aria-hidden": "true" },
-        }),
-        _vm._v(" "),
-        _c("span", { staticClass: "sr-only" }, [_vm._v("Next")]),
-      ]
-    )
-  },
   function () {
     var _vm = this
     var _h = _vm.$createElement
