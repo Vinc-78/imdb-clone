@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../../sass/partials/_movie.scss";
+@import "../../../sass/partials/_movie.scss";
 </style>

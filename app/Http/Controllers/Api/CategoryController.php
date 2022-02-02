@@ -8,15 +8,17 @@ use App\Category;
 
 class CategoryController extends Controller
 {
-    public function index(){
-        $categorie = Category::orderBy("name")->get();
+    public function index()
+    {
+        $categorie = Category::orderBy("name")->with("movies")->get();
 
         return $categorie;
     }
 
-    public function filter($id){
-        $categoryMovie = Category::with("movies")->where("id",$id)->first();
+    public function filter($id)
+    {
+        $categoryMovie = Category::with("movies")->where("id", $id)->first();
 
-        return $categoryMovie;
+        return response()->json($categoryMovie);
     }
 }
